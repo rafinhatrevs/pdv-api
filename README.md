@@ -31,34 +31,34 @@ Projeto desenvolvido durante a turma 16 de Desenvolvimento de Software | Back-En
 - **index.js:** Arquivo principal da aplicação que configura o servidor Express e as rotas.
 - **rotas.js:** Arquivo que contém as definições das rotas da API.
   
-#### controladores/:
-- **categorias.js:** Controlador responsável por listar todas as categorias cadastradas.
-- **clientes.js:** Controlador responsável por lidar com operações relacionadas aos clientes, como cadastrar, editar, listar e detalhar. 
-- **login.js:** Controlador responsável pelo login de usuários.
-- **pedidos.js:** Controlador responsável por lidar com operações relacionadas aos pedidos, como cadastrar e listar.
-- **produtos.js:** Controlador responsável por lidar com operações relacionadas aos produtos, como cadastrar, editar, listar, detalhar, excluir e efetuar upload de imagem.
-- **usuarios.js:** Controlador responsável por lidar com operações relacionadas aos usuários, como cadastrar, redefinir senha, detalhar e editar perfil. 
+  #### controladores/:
+  - **categorias.js:** Controlador responsável por listar todas as categorias cadastradas.
+  - **clientes.js:** Controlador responsável por lidar com operações relacionadas aos clientes, como cadastrar, editar, listar e detalhar. 
+  - **login.js:** Controlador responsável pelo login de usuários.
+  - **pedidos.js:** Controlador responsável por lidar com operações relacionadas aos pedidos, como cadastrar e listar.
+  - **produtos.js:** Controlador responsável por lidar com operações relacionadas aos produtos, como cadastrar, editar, listar, detalhar, excluir e efetuar upload de imagem.
+  - **usuarios.js:** Controlador responsável por lidar com operações relacionadas aos usuários, como cadastrar, redefinir senha, detalhar e editar perfil. 
   
-#### intermediarios/:
-- **validacaoLogin.js:** Intermediário para autenticar o login do usuário antes de executar operações.
-- **validacaoBody.js:** Intermediário para validação de preenchimento obrigatório de dados através de schemas Joi.
-- **multer.js:**
+  #### intermediarios/:
+  - **validacaoLogin.js:** Intermediário para autenticar o login do usuário antes de executar operações.
+  - **validacaoBody.js:** Intermediário para validação de preenchimento obrigatório de dados através de schemas Joi.
+  - **multer.js:** Configuração do middleware Multer para manipulação de uploads de arquivos.
 
-#### schemas/:
-- **schemaCliente.js:**
-- **schemaLogin.js:**
-- **schemaPedido.js:**
-- **schemaProduto.js:**
-- **schemaSenhaNova.js:**
-- **schemaUsuario.js:**
+  #### schemas/:
+  - **schemaCliente.js:** Schema Joi para validação dos dados dos clientes.
+  - **schemaLogin.js:** Schema Joi para validação dos dados de login dos usuários.
+  - **schemaPedido.js:** Schema Joi para validação dos dados dos pedidos.
+  - **schemaProduto.js:** Schema Joi para validação dos dados dos produtos.
+  - **schemaSenhaNova.js:** Schema Joi para validação da nova senha dos usuários durante a redefinição.
+  - **schemaUsuario.js:** Schema Joi para validação dos dados dos usuários.
 
-#### servicos/:
-- **conexao.js:** Arquivo de configuração da conexão com o banco de dados PostgreSQL utilizando knex.
-- **nodemailer.js:**
-- **storage.js:**
-
-#### storage/:
-- **s3.js:**
+  #### servicos/:
+  - **conexao.js:** Arquivo de configuração da conexão com o banco de dados PostgreSQL utilizando knex.
+  - **nodemailer.js:** Arquivo de configuração do serviço Nodemailer para envio de e-mails.
+  - **storage.js:** Arquivo de configuração do serviço de armazenamento de arquivos.
+  
+  #### storage/:
+  - **s3.js:** Arquivo que configura o cliente AWS S3 para armazenamento de arquivos na nuvem.
 
 #### sql/: 
 - **estrutura.sql:** Estrutura do banco de dados e suas tabelas.
@@ -166,10 +166,10 @@ $ npm run dev
 - **jsonwebtoken:** Implementação de tokens JWT (JSON Web Tokens) para autenticação segura entre partes.
 - **knex.js:** Biblioteca SQL query builder para Node.js que facilita a construção de consultas e migrações de banco de dados.
 - **dotenv:** Módulo para carregar variáveis de ambiente de um arquivo .env para process.env, ajudando na configuração segura de aplicações.
-- **aws-sdk:**
-- **joi:**
-- **multer:**
-- **nodemailer:**
+- **aws-sdk:** Biblioteca da AWS para integração com serviços como S3 para armazenamento de arquivos na nuvem.
+- **joi:** Biblioteca de validação para JavaScript, usada para validar o corpo das requisições.
+- **multer:** Middleware para gerenciamento de uploads de arquivos em aplicações Node.js.
+- **nodemailer:** Biblioteca para envio de e-mails em Node.js.
 
 <img src="https://user-images.githubusercontent.com/74038190/212284115-f47cd8ff-2ffb-4b04-b5bf-4d1c14c0247f.gif" width="1000">
 
