@@ -18,7 +18,7 @@ Desafio DDS Final - API PDV
 # API PDV
 
 Esta é uma API para um PDV (Frente de Caixa). O objetivo desta API é permitir que os usuários realizem operações relacionadas a cadastro, login, redefinição de senha, detalhamento e edição de perfil de usuários; 
-cadastro, edição, listagem, detalhamento e exclução de produtos; cadastro, edição, listagem e detalhamento de clientes; cadastro e listagem de pedidos; e, por fim, upload de imagens referente aos produtos.
+cadastro, edição, listagem, detalhamento e exclusão de produtos; cadastro, edição, listagem e detalhamento de clientes; cadastro e listagem de pedidos; e, por fim, upload de imagens referente aos produtos.
 Projeto desenvolvido durante a turma 16 de Desenvolvimento de Software | Back-End oferecida pela Cubos Academy.
 
 <img src="https://user-images.githubusercontent.com/74038190/212284115-f47cd8ff-2ffb-4b04-b5bf-4d1c14c0247f.gif" width="1000">
