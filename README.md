@@ -4,7 +4,7 @@ Desafio DDS Final - API PDV
 <p align="center">
   <img alt="Repository size" src="https://img.shields.io/github/repo-size/rafinhatrevs/pdv-api">
   
-  <a href="https://github.com/rafinhatrevs/pdv-api/commits/main/">
+  <a href="https://github.com/rafinhatrevs/pdv-api/commits/master/">
     <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/rafinhatrevs/pdv-api">
   </a>
   
