@@ -162,6 +162,7 @@ $ npm run dev
 - **Express.js:** Framework web para Node.js utilizado para criar a API RESTful.
 - **Nodemon:** Utilitário que monitora as alterações nos arquivos e reinicia automaticamente o servidor quando necessário.
 - **PostgreSQL:** Sistema de gerenciamento de banco de dados relacional open-source.
+- **npm:** Gerenciador de pacotes Node.js.
 - **bcrypt:** Função de hashing criptográfico utilizada para armazenar senhas de forma segura em bancos de dados.
 - **jsonwebtoken:** Implementação de tokens JWT (JSON Web Tokens) para autenticação segura entre partes.
 - **knex.js:** Biblioteca SQL query builder para Node.js que facilita a construção de consultas e migrações de banco de dados.
