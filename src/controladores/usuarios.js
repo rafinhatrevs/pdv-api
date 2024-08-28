@@ -31,7 +31,7 @@ const redefinirSenha = async (req, res) => {
         if (!usuarioEncontrado) { return res.status(404).json({ mensagem: 'Usuário não encontrado.' }); }
 
         const senhaValida = await bcrypt.compare(senha_antiga, usuarioEncontrado.senha);
-        if (!senhaValida) { return res.status(400).json({ mensagem: 'Email e senha não correspondem.' }); }
+        if (!senhaValida) { return res.status(401).json({ mensagem: 'Email e senha não correspondem.' }); }
 
         const senhaIgual = await bcrypt.compare(senha_nova, usuarioEncontrado.senha);
         if (senhaIgual) { return res.status(400).json({ mensagem: 'Nova senha não pode ser igual a anterior.' }); }
