@@ -235,12 +235,12 @@ $ npm run dev
 	"nome": "Cliente",
 	"email": "cliente@example.com",
 	"cpf": "12345678910",
-  "cep": "12345678",
-  "rua": "Rua 1",
-  "numero": 123,
-  "bairro": "Centro",
-  "cidade": "São Paulo",
-  "estado": "SP"
+	"cep": "12345678",
+	"rua": "Rua 1",
+	"numero": 123,
+	"bairro": "Centro",
+	"cidade": "São Paulo",
+	"estado": "SP"
 }
 
 ```
@@ -249,7 +249,8 @@ $ npm run dev
 // POST /pedido
 {
 	"cliente_id": 1,
-	"pedido_produtos": [
+	"pedido_produtos": 
+	[
 		{
 			"produto_id": 1,
 			"quantidade_produto": 5
