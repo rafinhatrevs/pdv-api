@@ -151,6 +151,111 @@ $ npm run dev
 
 ```javascript
 
+// POST /usuario
+{
+	"nome": "Usuario",
+	"email": "usuario@example.com",
+	"senha": "123456"
+}
+
+```
+```javascript
+
+// POST /login
+{
+	"email": "usuario@example.com",
+	"senha": "123456"
+}
+
+```
+```javascript
+
+// PATCH /usuario/redefinir
+{
+	"email": "usuario@example.com",
+	"senha_antiga": "123456",
+	"senha_nova": "1234567"
+}
+
+```
+```javascript
+
+// PUT /usuario
+{
+	"nome": "Usuario",
+	"email": "usuario@example.com",
+	"senha": "123456"
+}
+
+```
+```javascript
+
+// POST /produto
+{
+	"descricao": "Pato de Borracha",
+	"quantidade_estoque": 30,
+	"valor": 200,
+	"categoria_id": 4
+}
+
+```
+```javascript
+
+// PUT /produto/:id
+{
+	"descricao": "Pato de Borracha",
+	"quantidade_estoque": 30,
+	"valor": 200,
+	"categoria_id": 4
+}
+
+```
+```javascript
+
+// POST /produto/:id/imagem
+{
+	"imagem": "imagem.png"
+}
+
+```
+```javascript
+
+// POST /cliente
+{
+	"nome": "Cliente",
+	"email": "cliente@example.com",
+	"cpf": "12345678910"
+}
+
+```
+```javascript
+
+// PUT /cliente/:id
+{
+	"nome": "Cliente",
+	"email": "cliente@example.com",
+	"cpf": "12345678910",
+  "cep": "12345678",
+  "rua": "Rua 1",
+  "numero": 123,
+  "bairro": "Centro",
+  "cidade": "São Paulo",
+  "estado": "SP"
+}
+
+```
+```javascript
+
+// POST /pedido
+{
+	"cliente_id": 1,
+	"pedido_produtos": [
+		{
+			"produto_id": 1,
+			"quantidade_produto": 5
+		}
+	]
+}
 
 ```
 
