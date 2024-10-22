@@ -55,17 +55,7 @@
                         }
                     },
                     "500": {
-                        "description": "Erro interno do servidor.",
-                        "content": {
-                            "application/json": {
-                                "schema": {
-                                    "$ref": "#/components/schemas/Erro"
-                                },
-                                "example": {
-                                    "mensagem": "Erro interno do servidor."
-                                }
-                            }
-                        }
+                        "description": "Erro interno do servidor."
                     }
                 }
             }
@@ -278,42 +268,42 @@
                         "description": "Erro interno do servidor."
                     }
                 }
-            }
-        },
-        "get": {
-            "summary": "Listar Produtos",
-            "tags": [
-                "Produtos"
-            ],
-            "parameters": [
-                {
-                    "name": "categoria_id",
-                    "in": "query",
-                    "schema": {
-                        "type": "integer"
-                    },
-                    "description": "ID da categoria para filtrar produtos."
-                }
-            ],
-            "responses": {
-                "200": {
-                    "description": "Listagem de produtos retornada com sucesso.",
-                    "content": {
-                        "application/json": {
-                            "schema": {
-                                "type": "array",
-                                "items": {
-                                    "$ref": "#/components/schemas/Produto"
+            },
+            "get": {
+                "summary": "Listar Produtos",
+                "tags": [
+                    "Produtos"
+                ],
+                "parameters": [
+                    {
+                        "name": "categoria_id",
+                        "in": "query",
+                        "schema": {
+                            "type": "integer"
+                        },
+                        "description": "ID da categoria para filtrar produtos."
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Listagem de produtos retornada com sucesso.",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "array",
+                                    "items": {
+                                        "$ref": "#/components/schemas/Produto"
+                                    }
                                 }
                             }
                         }
+                    },
+                    "404": {
+                        "description": "Nenhum produto encontrado / Categoria não encontrada."
+                    },
+                    "500": {
+                        "description": "Erro interno do servidor."
                     }
-                },
-                "404": {
-                    "description": "Nenhum produto encontrado / Categoria não encontrada."
-                },
-                "500": {
-                    "description": "Erro interno do servidor."
                 }
             }
         },
@@ -944,29 +934,6 @@
                             },
                             "valor_total": {
                                 "type": "integer"
-                            }
-                        }
-                    },
-                    "pedido_produtos": {
-                        "type": "array",
-                        "items": {
-                            "type": "object",
-                            "properties": {
-                                "id": {
-                                    "type": "integer"
-                                },
-                                "quantidade_produto": {
-                                    "type": "integer"
-                                },
-                                "valor_produto": {
-                                    "type": "integer"
-                                },
-                                "pedido_id": {
-                                    "type": "integer"
-                                },
-                                "produto_id": {
-                                    "type": "integer"
-                                }
                             }
                         }
                     }
