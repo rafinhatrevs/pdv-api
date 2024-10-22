@@ -144,7 +144,7 @@ $ npm run dev
 ```
 
 <p align="center">
-  <a href="https://insomnia.rest/run/?label=&uri=https://raw.githubusercontent.com/rafinhatrevs/dindin-api-insomnia/main/Insomnia_2024-06-25.json" target="_blank"><img src="https://insomnia.rest/images/run.svg" alt="Run in Insomnia"></a>
+  <a href="https://insomnia.rest/run/?label=&uri=" target="_blank"><img src="https://insomnia.rest/images/run.svg" alt="Run in Insomnia"></a>
 </p>
 
 #### Exemplos de requisições (Body JSON)
