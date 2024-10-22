@@ -143,10 +143,6 @@ $ npm run dev
 
 ```
 
-<p align="center">
-  <a href="https://insomnia.rest/run/?label=&uri=" target="_blank"><img src="https://insomnia.rest/images/run.svg" alt="Run in Insomnia"></a>
-</p>
-
 #### Exemplos de requisições (Body JSON)
 
 ```javascript
